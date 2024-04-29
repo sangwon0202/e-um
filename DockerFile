@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk
+ARG JAR_FILE=build/libs/e-um.jar
+ADD ${JAR_FILE} e-um.jar
+ENTRYPOINT ["java", "-jar", "/e-um.jar"]
